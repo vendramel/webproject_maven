@@ -65,8 +65,7 @@ public class Sexo implements Serializable {
     @Override
     public int hashCode() {
         int hash = 7;
-        hash = 37 * hash + Objects.hashCode(this.idSexo);
-        hash = 37 * hash + Objects.hashCode(this.descricao);
+        hash = 97 * hash + Objects.hashCode(this.idSexo);
         return hash;
     }
 
@@ -82,11 +81,10 @@ public class Sexo implements Serializable {
         if (!Objects.equals(this.idSexo, other.idSexo)) {
             return false;
         }
-        if (!Objects.equals(this.descricao, other.descricao)) {
-            return false;
-        }
         return true;
     }
+
+   
     
     
     
